@@ -63,6 +63,12 @@ public class Program {
 		sellerupdate.setName("Martha Waine");
 		sellerDao.update(sellerupdate);
 		System.out.println("Update completed!");
+		
+		System.out.println("==== TEST 7: Department update =====");
+		Department departmentUpdate = departmentDao.findById(1);
+		departmentUpdate.setName("IT");
+		departmentDao.update(departmentUpdate);
+		System.out.println("Update completed!");
 	}
 
 }
