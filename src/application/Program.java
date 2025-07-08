@@ -69,6 +69,11 @@ public class Program {
 		departmentUpdate.setName("IT");
 		departmentDao.update(departmentUpdate);
 		System.out.println("Update completed!");
+		
+		System.out.println("==== TEST 8: Seller delete =====");
+		sellerDao.deleteById(20);
+		System.out.println("Delete completed!");
+		
 	}
 
 }
