@@ -59,7 +59,7 @@ public class Program {
 		
 		
 		System.out.println("==== TEST 6: seller update =====");
-		Seller sellerupdate = sellerDao.findById(1);
+		Seller sellerupdate = sellerDao.findById(5);
 		sellerupdate.setName("Martha Waine");
 		sellerDao.update(sellerupdate);
 		System.out.println("Update completed!");
@@ -74,6 +74,9 @@ public class Program {
 		sellerDao.deleteById(20);
 		System.out.println("Delete completed!");
 		
+		System.out.println("==== TEST 8: department delete =====");
+		departmentDao.deleteById(1);
+		System.out.println("Delete completed!");
 	}
 
 }
